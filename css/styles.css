@@ -60,6 +60,34 @@ header {
   color: #fff;
   text-transform: uppercase;
   margin-bottom: 60px;
+
+  /* /tên hiệu ứng */
+  /* animation-name: moveInLeft; */
+  /* thời gian thực hiện */
+  /* animation-duration: 2s; */
+  /* số lần thực hiện, infinite vô cực */
+  /* animation-iteration-count: 1; */
+  /* thời gian chờ trước khi hiệu ứng xảy ra */
+  /* animation-delay: 1s; */
+  /* mặc định nó sẽ chạy đều đều */
+  /* animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1); */
+
+  animation: moveInLeft 1s ease-out;
+}
+@keyframes moveInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-100px);
+  }
+
+  80% {
+    transform: translateX(10px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
 }
 
 .heading-primary__main {
@@ -74,6 +102,22 @@ header {
   font-size: 20px;
   font-weight: 700;
   letter-spacing: 18px;
+  animation: moveInRight 1s ease-out;
+}
+@keyframes moveInRight {
+  0% {
+    opacity: 0;
+    transform: translateX(100px);
+  }
+
+  80% {
+    transform: translateX(-10px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
 }
 
 /* link la khi binh thuong */
@@ -128,4 +172,21 @@ header {
 
 .btn-white::after {
   background-color: #fff;
+}
+
+.btn-animated {
+  animation: moveInBottom 1s ease-out 0.75s;
+  /* trong thời gian delay không hiện gì  */
+  animation-fill-mode: backwards;
+}
+@keyframes moveInBottom {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
