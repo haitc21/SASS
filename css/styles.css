@@ -12,7 +12,8 @@ dark blue:#1c3eff
 *::before {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
+  /* inherit kế thừa từ class cha */
+  box-sizing: inherit;
 }
 
 body {
@@ -25,6 +26,7 @@ body {
   line-height: 1.7;
   color: #777777;
   padding: 30px;
+  box-sizing: border-box;
 }
 
 header {
@@ -43,7 +45,7 @@ header {
   clip-path: ellipse(60% 60% at 50% 33%);
 }
 
-.text-box {
+.header__text-box {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -51,11 +53,11 @@ header {
   text-align: center;
 }
 
-.logo {
+.header__logo {
   height: 70px;
 }
 
-.logo-box {
+.header__logo-box {
   position: absolute;
   top: 30px;
   left: 30px;
@@ -95,14 +97,14 @@ header {
   }
 }
 
-.heading-primary__main {
+.heading-primary--main {
   display: block;
   font-size: 5rem;
   font-weight: 400;
   letter-spacing: 15px;
 }
 
-.heading-primary__sub {
+.heading-primary--sub {
   display: block;
   font-size: 2rem;
   font-weight: 700;
@@ -170,16 +172,16 @@ header {
   opacity: 0;
 }
 
-.btn-white {
+.btn--white {
   color: #777777;
   background-color: #fff;
 }
 
-.btn-white::after {
+.btn--white::after {
   background-color: #fff;
 }
 
-.btn-animated {
+.btn--animated {
   animation: moveInBottom 1s ease-out 0.75s;
   /* trong thời gian delay không hiện gì  */
   animation-fill-mode: backwards;

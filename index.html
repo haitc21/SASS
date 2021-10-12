@@ -24,16 +24,27 @@
     <title>SELFTAUGHT | Skill Website</title>
   </head>
   <body>
-    <header>
-      <div class="logo-box">
-        <img src="./img/logooutline.png" class="logo" alt="logo" />
+    <!-- Quy tắc đặt tên class
+    BEM : Block Element Modifier
+   -  Block: Tên của component
+   - Element: Thành phần bổ trợ cho block
+   - Modifier: Các dạng khác biến thể của block và Element
+   Quy ước: block__element, block--modifier, element--modifier
+   ví dụ phần header:
+   - Block: header, heading-primary, btn
+   - Element: logo-box, logo, text-box
+   - ModifierL main, sub, while, animated
+  -->
+    <header class="header">
+      <div class="header__logo-box">
+        <img src="./img/logooutline.png" class="header__logo" alt="logo" />
       </div>
-      <div class="text-box">
+      <div class="header__text-box">
         <h3 class="heading-primary">
-          <span class="heading-primary__main"> selftaught </span>
-          <span class="heading-primary__sub"> is how you survive </span>
+          <span class="heading-primary--main"> selftaught </span>
+          <span class="heading-primary--sub"> is how you survive </span>
         </h3>
-        <a href="#" class="btn btn-white btn-animated">See our courses</a>    </header>
+        <a href="#" class="btn btn--white btn--animated">See our courses</a>    </header>
       </div>
   </body>
 </html>
