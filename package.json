@@ -1,0 +1,22 @@
+{
+  "name": "sass",
+  "version": "1.0.0",
+  "description": "Hoc sass",
+  "main": "index.js",
+  "scripts": {
+    "sasstocss" : "node-sass sass/main.scss css/styles.css -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/haitc21/SASS.git"
+  },
+  "author": "Haitc",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/haitc21/SASS/issues"
+  },
+  "homepage": "https://github.com/haitc21/SASS#readme",
+  "dependencies": {
+    "node-sass": "^6.0.1"
+  }
+}
