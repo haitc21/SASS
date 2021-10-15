@@ -1,77 +1,5 @@
 @charset "UTF-8";
 /*  COLORS: */
-html {
-  /* không khai báo thì mặc định font-size = 16px */
-  /* để 10 để thay đổi các font-size theo rem (*x) */
-  /* ví dụ 20px= 2rem */
-  font-size: 10px; }
-
-*,
-*::after,
-*::before {
-  margin: 0;
-  padding: 0;
-  /* inherit kế thừa từ class cha */
-  box-sizing: inherit; }
-
-body {
-  font-family: "Lato", sans-serif;
-  font-weight: 400;
-  font-size: 1.6rem;
-  line-height: 1.7;
-  color: #777777;
-  padding: 3rem;
-  box-sizing: border-box; }
-
-.header {
-  background-image: linear-gradient(to right bottom, #8e9efc, #1c3eff), url("../img/background1.jpg");
-  background-size: cover;
-  background-position: top;
-  position: relative;
-  height: 95vh;
-  /* lam background cong */
-  /* https://bennettfeely.com/clippy/ */
-  clip-path: ellipse(60% 60% at 50% 33%); }
-  .header__text-box {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center; }
-  .header__logo {
-    height: 7rem; }
-  .header__logo-box {
-    position: absolute;
-    top: 3rem;
-    left: 3rem; }
-
-.heading-primary {
-  color: #fff;
-  text-transform: uppercase;
-  margin-bottom: 6rem; }
-  .heading-primary--main {
-    display: block;
-    font-size: 6rem;
-    font-weight: 700;
-    letter-spacing: 1.5rem;
-    /* /tên hiệu ứng */
-    /* animation-name: moveInLeft; */
-    /* thời gian thực hiện */
-    /* animation-duration: 2s; */
-    /* số lần thực hiện, infinite vô cực */
-    /* animation-iteration-count: 1; */
-    /* thời gian chờ trước khi hiệu ứng xảy ra */
-    /* animation-delay: 1s; */
-    /* mặc định nó sẽ chạy đều đều */
-    /* animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1); */
-    animation: moveInLeft 2s ease-out; }
-  .heading-primary--sub {
-    display: block;
-    font-size: 2rem;
-    font-weight: 700;
-    letter-spacing: 1.6rem;
-    animation: moveInRight 2s ease-out; }
-
 @keyframes moveInLeft {
   0% {
     opacity: 0;
@@ -91,6 +19,39 @@ body {
   100% {
     opacity: 1;
     transform: translateX(0); } }
+
+@keyframes moveInBottom {
+  0% {
+    opacity: 0;
+    transform: translateY(3rem); }
+  100% {
+    opacity: 1;
+    transform: translateY(0); } }
+
+html {
+  /* không khai báo thì mặc định font-size = 16px */
+  /* để 10 để thay đổi các font-size theo rem (*x) */
+  /* ví dụ 20px= 2rem */
+  font-size: 10px; }
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  /* inherit kế thừa từ class cha */
+  box-sizing: inherit; }
+
+body {
+  padding: 3rem;
+  box-sizing: border-box; }
+
+body {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-size: 1.6rem;
+  line-height: 1.7;
+  color: #777777; }
 
 /* link la khi binh thuong */
 .btn:link, .btn:visited {
@@ -140,10 +101,51 @@ body {
   .btn--white::after {
     background-color: #fff; }
 
-@keyframes moveInBottom {
-  0% {
-    opacity: 0;
-    transform: translateY(3rem); }
-  100% {
-    opacity: 1;
-    transform: translateY(0); } }
+.header {
+  background-image: linear-gradient(to right bottom, rgba(142, 158, 252, 0.8), rgba(28, 62, 255, 0.9)), url("../img/background1.jpg");
+  background-size: cover;
+  background-position: top;
+  position: relative;
+  height: 95vh;
+  /* lam background cong */
+  /* https://bennettfeely.com/clippy/ */
+  clip-path: ellipse(60% 60% at 50% 33%); }
+  .header__text-box {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center; }
+  .header__logo {
+    height: 7rem; }
+  .header__logo-box {
+    position: absolute;
+    top: 3rem;
+    left: 3rem; }
+
+.heading-primary {
+  color: #fff;
+  text-transform: uppercase;
+  margin-bottom: 6rem; }
+  .heading-primary--main {
+    display: block;
+    font-size: 6rem;
+    font-weight: 700;
+    letter-spacing: 1.5rem;
+    /* /tên hiệu ứng */
+    /* animation-name: moveInLeft; */
+    /* thời gian thực hiện */
+    /* animation-duration: 2s; */
+    /* số lần thực hiện, infinite vô cực */
+    /* animation-iteration-count: 1; */
+    /* thời gian chờ trước khi hiệu ứng xảy ra */
+    /* animation-delay: 1s; */
+    /* mặc định nó sẽ chạy đều đều */
+    /* animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1); */
+    animation: moveInLeft 2s ease-out; }
+  .heading-primary--sub {
+    display: block;
+    font-size: 2rem;
+    font-weight: 700;
+    letter-spacing: 1.6rem;
+    animation: moveInRight 2s ease-out; }
