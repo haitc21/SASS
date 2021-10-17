@@ -1,10 +1,15 @@
 @import './Abtracts/variable';
 @import './Abtracts/mixin';
+
 @import './Base/animations';
 @import './Base/base';
 @import './Base/typography';
 @import './Base/utilities';
+
 @import './Components/buttons';
+@import './Components/composition.scss';
+
 @import './Layout/header';
 @import './Layout/grid';
+
 @import './Pages/home'l
