@@ -43,12 +43,21 @@
     /* trong thời gian delay không hiện gì  */
     animation-fill-mode: backwards;
   }
-}
-.btn--white {
-  color: $color-grey;
-  background-color: $color-white;
-  &::after {
+
+  &--white {
+    color: $color-grey;
     background-color: $color-white;
+    &::after {
+      background-color: $color-white;
+    }
+  }
+  &--blue {
+    background-color: $color-primary;
+    color: $color-white;
+
+    &::after {
+      background-color: $color-primary;
+    }
   }
 }
 

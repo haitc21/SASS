@@ -134,6 +134,12 @@ body {
   .btn--white::after {
     background-color: #fff; }
 
+.btn--blue {
+  background-color: #5a73fc;
+  color: #fff; }
+  .btn--blue::after {
+    background-color: #5a73fc; }
+
 .btn-text:link, .btn-text:visited {
   color: #5a73fc;
   display: inline-block;
@@ -221,6 +227,12 @@ body {
     .card__side--back {
       background-color: green;
       transform: rotateY(180deg); }
+      .card__side--back-1 {
+        background-image: linear-gradient(to right, #ffb900, #ff7730); }
+      .card__side--back-2 {
+        background-image: linear-gradient(to right, #8e9efc, #1c3eff); }
+      .card__side--back-3 {
+        background-image: linear-gradient(to right, #55c57a, #28b485); }
   .card:hover .card__side--front {
     transform: rotateY(-180deg); }
   .card:hover .card__side--back {
@@ -268,6 +280,22 @@ body {
         padding: 1rem; }
         .card__details ul li:not(:last-child) {
           border-bottom: 1px solid #dbdbdb; }
+  .card__cta {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); }
+  .card__price-box {
+    text-align: center;
+    color: #fff;
+    margin-bottom: 8rem; }
+  .card__price-only {
+    font-size: 3rem;
+    text-transform: uppercase; }
+  .card__price-value {
+    font-size: 6rem;
+    font-weight: 300;
+    margin-bottom: 5rem; }
 
 .header {
   background-image: linear-gradient(to right bottom, rgba(142, 158, 252, 0.8), rgba(28, 62, 255, 0.9)), url("../img/background1.jpg");
