@@ -1,28 +1,32 @@
-
-.section-about{
-    background-color: $color-grey-light-1;
-    padding: 25rem 0;
-    margin-top: -25rem;
+.section-about {
+  background-color: $color-grey-light-1;
+  padding: 25rem 0;
+  margin-top: -25rem;
 }
 
-.section-skills{
-    background-image: linear-gradient(
-        to right bottom,
-        rgba($color-primary-light, 0.8),
-        rgba($color-primary-dark, 0.8)
-      ),
-      url("../img/background1.jpg");
-    background-size: cover;
-    position: relative;
-    // có padding thì cái height nó ăn theo ảnh
-    padding: 20rem 0;
-    margin-top: -20rem;
+.section-skills {
+  background-image: linear-gradient(
+      to right bottom,
+      rgba($color-primary-light, 0.8),
+      rgba($color-primary-dark, 0.8)
+    ),
+    url("../img/background1.jpg");
+  background-size: cover;
+  position: relative;
+  // có padding thì cái height nó ăn theo ảnh
+  padding: 20rem 0;
+  margin-top: -20rem;
 
-    clip-path: ellipse(70% 50% at 50% 50%);
+  clip-path: ellipse(70% 50% at 50% 50%);
 }
 
-.section-courses{
-    background-color: $color-grey-light-1;
-    padding: 25rem 0 10rem 0;
-    margin-top: -20rem;
+.section-courses {
+  background-color: $color-grey-light-1;
+  padding: 25rem 0 10rem 0;
+  margin-top: -20rem;
+}
+
+.section-testimonials {
+  position: relative;
+  padding: 5rem 0;
 }
