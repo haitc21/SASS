@@ -8,7 +8,6 @@
   left: 0;
   background-color: rgba($color-black, 0.8);
   z-index: 9999;
-  transition: all 0.5s;
 
   &__img {
     display: block;
@@ -70,6 +69,7 @@
   &:target {
     opacity: 1;
     visibility: visible;
+    transition: all 0.5s;
   }
   &:target &__content {
     opacity: 1;
