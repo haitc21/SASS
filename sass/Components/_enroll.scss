@@ -1,5 +1,8 @@
 .enroll {
     //transparent trong suốt
+    // 150% 200% ellipse kích thước của hình elip,
+    //-15% độ lệch tâm theo trục x có thể thêm trục y
+    // 2 cái màu sau là kiểu như 50% màu trắng 50% trong suốt
   background-image: radial-gradient(
       150% 200% ellipse at -15%,
       rgba($color-white, 0.8) 50%,
