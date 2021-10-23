@@ -1,20 +1,35 @@
 html {
-    /* không khai báo thì mặc định font-size = 16px */
-    /* để 10 để thay đổi các font-size theo rem (*x) */
-    /* ví dụ 20px= 2rem */
-    font-size: 10px;
+  /* không khai báo thì mặc định font-size = 16px */
+  /* để 10 để thay đổi các font-size theo rem (*x) */
+  /* ví dụ 20px= 2rem */
+  font-size: 62.5%;
+
+  @include respond(tab-land) {
+    font-size: 56.25%; //1rem =9px
   }
-  *,
-  *::after,
-  *::before {
-    margin: 0;
-    padding: 0;
-    /* inherit kế thừa từ class cha */
-    box-sizing: inherit;
+
+  @include respond(tab-port) {
+    font-size: 50%; //1 rem = 8px
   }
-  
-  body {
-    padding: 3rem;
-    box-sizing: border-box;
+  @include respond(phone) {
+    font-size: 40%; 
   }
-  
+
+  @include respond(big-desktop) {
+    font-size: 75%; //1rem = 12px
+  }
+}
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  /* inherit kế thừa từ class cha */
+  box-sizing: inherit;
+}
+
+body {
+  padding: 3rem;
+  box-sizing: border-box;
+}
